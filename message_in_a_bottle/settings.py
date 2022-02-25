@@ -42,12 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-<<<<<<< HEAD
-    'cloudinary,'
-=======
     'crispy_forms',
     'cloudinary',
->>>>>>> b691327385ea3e73dc1e1a867a4a2d4e06cf7f1e
     'home',
     'bottles',
 ]
@@ -150,11 +146,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-<<<<<<< HEAD
-=======
 
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'landing-home'
->>>>>>> b691327385ea3e73dc1e1a867a4a2d4e06cf7f1e

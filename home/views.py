@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-from django.shortcuts import render
-
-# Create your views here.
-=======
 from django.shortcuts import render, redirect
 from django.contrib.auth import logout
 # from django.contrib.auth.forms import UserCreationForm
@@ -33,4 +28,3 @@ def logout_view(request):
     messages.info(request, f'Logged out!')
     return redirect('landing-home')
 
->>>>>>> b691327385ea3e73dc1e1a867a4a2d4e06cf7f1e
