@@ -8,8 +8,18 @@
         <div class="basic-wrapper">
             <h2>Welcome to the site {{user.username}}</h2>
         </div>
-    {% endif %}
 
+      
+    {% endif %}
+    {% for letter in letter_list %}
+    <a href ="{% url 'letter_detail' letter.slug %}">
+
+    <h2 class="card-title">{{ letter.body }}</h2>
+    <p class="card-title">{{ letter.author }}</p>
+    <p class="card-title">{{ letter.created_on }}</p>
+    </a>
+ 
+    {% endfor %}
     
 {% endblock content %}
 
