@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap');
 
 
@@ -7,18 +7,61 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;
+    border: none;
+    box-sizing: border-box;
 }
-
-
 
 body {
     font-family: 'Lato', sans-serif;
     height: 100vh;
-    position: relative;
-    width: 100%;
-
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
+
+/* headings and logo */
+
+a {
+    text-decoration: none !important;
+}
+
+#logo {
+    font-family: 'Lovers Quarrel', cursive;
+    font-size: 300%;
+    color: #FFCCCC;
+    margin-left: 3rem;
+    position: relative;
+}
+
+#logo:hover {
+    color: #c31aad;
+}
+
+.basic-wrapper {
+    width: 90%;
+    max-width: 600px;
+    margin: 5em auto;
+}
+
+/*Navbar section*/
+
+header {
+    background-color: #590c8d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav {
+    margin-right: 3rem;
+}
+
+.nav-item {
+    text-transform: uppercase;
+}
+
+/* landing page */
 
 #row {
     --bs-gutter-y: 0;
@@ -30,76 +73,25 @@ body {
 }
 
 #body-image {
-    height: 85%;
-    width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../img/heart1.jpg");
-    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../img/heart1.jpg") no-repeat center center;
+    background-size: cover;
     position: absolute;
-    margin: 0%;
-    padding-right: 0%;
-    padding-left: 0%;
 }
 
-
-/* headings and logo */
-
-#logo {
-
-    font-size: small;
-    text-transform: uppercase;
-    position: absolute;
-    right: 1300px;
-
-}
-
-.message {
-    font-family: 'Love Light', cursive;
-    font-size: 64px;
-}
-
-.basic-wrapper {
-    width: 90%;
-    max-width: 600px;
-    margin: 5em auto;
-}
-
-/*Navbar section*/
-
-.navbar {
-    background-color: #590c8d;
-
-}
-
-.nav-item {
-    font-size: small;
-    text-transform: uppercase;
-    float: right;
-    margin-left: 40px;
-}
-
-.nav-text-color {
-    color: #c31aad;
-}
-
-.nav-text-color:hover {
-    color: #fff;
-    background-color: #c31aad;
-    ;
-}
-
-
-/*sign up section*/
+/*sign up heart*/
 
 #signup {
-    margin-top: 100px;
+    margin-top: 15em;
     color: #590c8d;
     font-size: x-large;
-
 }
 
 #below_heart {
     color: #42193d;
     font-size: 30px;
+    font-weight: 600;
     margin-right: 10px;
 }
 
@@ -114,7 +106,6 @@ body {
     transition: width 2s, height 2s, background-color 2s, transform 2s;
     color: #42193d;
     padding-top: 5px;
-
 }
 
 .fa-heart:hover {
@@ -125,62 +116,13 @@ body {
     width: 200px;
     height: 200px;
     transform: rotate(360deg);
-
-
 }
-
-.modal-header {
-
-    background: #590c8d;
-    color: #fff;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: 1rem 1rem;
-    border-bottom: 1px solid #dee2e6;
-    border-top-left-radius: calc(0.3rem - 1px);
-    border-top-right-radius: calc(0.3rem - 1px);
-}
-
-#signUpForm {
-    background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
-        linear-gradient(127deg, rgba(255, 255, 0, 0.5), rgba(0, 255, 0, 0) 70.71%),
-        linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.red-x {
-    color: red;
-    position: absolute;
-    right: 24px;
-    top: 5px;
-    border: #c31aad;
-}
-
-
 
 /*footer section*/
 
-p {
-    margin-top: 10px;
-}
-
 footer {
-    position: fixed;
-    left: 0px;
-    bottom: 0px;
-    height: 100px;
-    width: 100%;
-    padding: 0 30px;
-    display: flow-root;
-    align-items: center;
-    justify-content: space-between;
-    border-top: 2px solid #fff
+    position: relative;
 }
-
 
 .social-links {
     margin-top: 20px;
@@ -188,7 +130,6 @@ footer {
 
 .social-links li a i {
     background-color: #42193d;
-    ;
     height: 50px;
     width: 50px;
     color: #fff;
@@ -200,4 +141,34 @@ footer {
 .social-links li a i:hover {
     background: #FFCCCC;
     color: #c31aad;
+}
+
+input.input-box{
+width:75%;
+}
+
+textarea.input-box.input-lg{
+    width:75%;
+    }
+/* Media Queries */
+
+@media screen and (max-width: 500px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    #signup {
+        margin-top: 12em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #logo {
+        font-size: 250%;
+    }
 }
