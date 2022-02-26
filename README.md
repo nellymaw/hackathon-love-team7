@@ -1,27 +1,25 @@
-## Table of contents
-- <a href="#about">About</a> 
-- <a href="#ux">UX Design</a>
-  - <a a href="#user-stories">User Stories</a>
-  - <a href="#typography">Typography</a>
-  - <a href="#color">Color</a>
-  - <a href="#wireframes">Wireframes</a>
-- <a href="#features">Features</a>
-  - <a href="#features-left">Features Left to Impliment</a>
-- <a href="#tech">Technologies Used</a>
-- <a href="#test">Testing</a>
-- <a href="#deployment">Deployment</a>
-- <a href="#credits">Credits</a>
+# Overview
 
+# Table of contents
+- [Overview](#overview)
+- [Table of contents](#table-of-contents)
+- [About](#about)
+- [UX Design](#ux-design)
+  - [<p id="user-stories"> User Stories</p>](#-user-stories)
+  - [<p id="typography">Typography</p>](#typography)
+  - [<p id="color">Colors</p>](#colors)
+  - [<p id="wireframes">Wireframes</p>](#wireframes)
+- [Features](#features)
+  - [<p id="features-left">Features left to impliment</p>](#features-left-to-impliment)
+- [Technologies Used](#technologies-used)
+- [Testing <p id="test"></p>](#testing-)
+- [Deployment <p id="deployment"></p>](#deployment-)
+- [Credits <p id="credits"></p>](#credits-)
 
 
 <section id="about">
 
-# About 
-
- 
-
- 
- 
+# About
  The site is deployed here:
  
  - https://example.com/ 
@@ -64,14 +62,16 @@
 
 
 ## <p id="typography">Typography</p> 
-[Lato](https://fonts.google.com/specimen/Lato?query=lato&preview.text=Love%20is%20in%20the%20air&preview.text_type=custom#standard-styles) and [Love Lite](https://fonts.google.com/specimen/Love+Light?query=lato&preview.text=Love%20is%20in%20the%20air&preview.text_type=custom) fonts were used.
+[Lato](https://fonts.google.com/specimen/Lato?query=lato&preview.text=Love%20is%20in%20the%20air&preview.text_type=custom#standard-styles) and [Lovers Quarrel](https://fonts.google.com/specimen/Lovers+Quarrel?query=love&preview.text=Love%20is%20in%20the%20air&preview.text_type=custom) fonts were used.
 
 
 ## <p id="color">Colors</p> 
 
-- ![#1A5466](https://via.placeholder.com/15/1A5466/000000?text=+) `#1A5466`
-- ![#982566](https://via.placeholder.com/15/982566/000000?text=+) `#982566`
-- ![#DE9D73](https://via.placeholder.com/15/DE9D73/000000?text=+) `#DE9D73`
+![#1A5466](https://via.placeholder.com/15/1A5466/000000?text=+) `#1A5466`
+
+![#982566](https://via.placeholder.com/15/982566/000000?text=+) `#982566`
+
+![#DE9D73](https://via.placeholder.com/15/DE9D73/000000?text=+) `#DE9D73`
 
 
 </section>
@@ -99,36 +99,46 @@ Wireframes can be found [here]()
 # Technologies Used 
 
 [Gitpod](https://www.gitpod.io) 
-- IDE (Intigrated Development Environment)
+
+IDE (Intigrated Development Environment)
 
 [Github](https://www.github.com)
-- remote repository hosting platform
+
+Remote repository hosting platform
 
 [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) | [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) | [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) | [Jquery](https://jquery.com/) | [Python](https://www.python.org/) | [Django](https://www.djangoproject.com/)
 
-- Languages, libraries and framework
+Languages, libraries and framework
  Used to make the site
 
 [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)
-- Used to check site responsiveness
+
+Used to check site responsiveness
 
 [Jigsaw](https://jigsaw.w3.org/css-validator/)
-- Check for CSS errors
+
+Check for CSS errors
 
 [HTML Validator](https://validator.w3.org/)
-- Check for HTML errors
+
+Check for HTML errors
 
 [jshint](https://jshint.com/)
-- check for JavaScript errors
+
+Check for JavaScript errors
 
 [Font Awesome](https://fontawesome.com/)
-- for Icons 
+
+For Icons 
 
 [Balsamiq](https://balsamiq.com/)
-- to make wireframes
+
+Used to create wireframes
 
 [Website Responsive Test](http://responsivetesttool.com/)
-- to check responsivness on different devices
+
+Check responsivness on different devices
+
 
 # Testing <p id="test"></p>
 
@@ -138,9 +148,7 @@ Testing can be found in this file: [Testing]()
 
 # Deployment <p id="deployment"></p>
 
-The site is deployed on git hub pages. The link is here:
-
-https://xiaoniuniu89.github.io/santa-letters/
+The site is deployed on git hub pages. The link is [here]()
 
 Steps to deploy the site:
 
@@ -169,24 +177,4 @@ More detailed instructions can be found [here](https://docs.github.com/en/github
 
 # Credits <p id="credits"></p>
 
-## Content
-
-### Media
-<br>
-
-#### Images
-
-
-
-<br>
-
-
-
-#### Videos
-
-
-<br>
-
-### Text
-
-- text written by
+- Images were taken from [Pexels.com](https://www.pexels.com)
