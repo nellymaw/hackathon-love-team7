@@ -8,6 +8,7 @@ def profiles(request):
     """
     dlkcvjadl
     """
+    model = Profile
     profile = get_object_or_404(Profile, user=request.user)
 
     template = 'profiles/profile.html'
