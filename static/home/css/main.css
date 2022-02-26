@@ -157,6 +157,9 @@ width:75%;
 textarea.input-box.input-lg{
     width:75%;
     }
+<<<<<<< HEAD
+/* Media Queries */
+=======
 
 /* The Modal (background) */
 .modal {
@@ -236,6 +239,7 @@ textarea.input-box.input-lg{
 .modal-body {padding: 2px 16px;}
 
     /* Media Queries */
+>>>>>>> 6e0aebceaea12c3e91eaf41d1e07191271a8bc8b
 
 @media screen and (max-width: 500px) {
     header {
