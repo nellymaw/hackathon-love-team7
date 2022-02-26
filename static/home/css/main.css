@@ -143,6 +143,13 @@ footer {
     color: #c31aad;
 }
 
+input.input-box{
+width:75%;
+}
+
+textarea.input-box.input-lg{
+    width:75%;
+    }
 /* Media Queries */
 
 @media screen and (max-width: 500px) {
