@@ -68,7 +68,9 @@
                       </div>
                     <li class="nav-item"><a class="nav-link" href="#">Go Fish</a></li>
                     {% if user.is_authenticated %}
+                    <li class="nav-item"><a class="nav-link" href="{% url 'profile' %}">Profile</a>
                     <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">Logout</a>
+                    
                     </li>
                     {% else %}
                     <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Login</a>
