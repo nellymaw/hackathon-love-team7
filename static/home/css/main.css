@@ -160,7 +160,14 @@ textarea.input-box.input-lg{
 
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 375px) {
+
+    #signup {
+        margin-top: 12em;
+    }
+}
+
+@media screen and (max-width: 350px) {
     #logo {
         font-size: 250%;
     }
