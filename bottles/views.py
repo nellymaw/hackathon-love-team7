@@ -1,5 +1,8 @@
 from django.shortcuts import render, get_object_or_404
+from django.contrib import messages
 from django.views import generic, View
+from django.contrib.auth.decorators import login_required
+from django.core.mail import send_mail
 from .models import Letter
 from .forms import ReplyForm
 import random
@@ -83,6 +86,7 @@ class LetterDetail(View):
         reply_form = ReplyForm(data=request.POST)
         if reply_form.is_valid():
             reply_form.instance.name = request.user.username
+            reply_form.instance.email = request.user.email
             reply = reply_form.save(commit=False)
             reply.letter = letter
             reply.save()
@@ -97,3 +101,36 @@ class LetterDetail(View):
                 },
         )
 
+@login_required
+def ContactView(request, slug):
+    """
+    Sends email -contact us form fields to admin or prints to the terminal
+    in development
+    Prepopulates email and username
+    Args:
+       request (object): HTTP request object.
+       slug: slug
+    Returns:
+       Render contact us page  with context
+    """
+    email = request.user.email
+    username = request.user.username
+
+    queryset = Letter.objects
+    letter = get_object_or_404(queryset, slug=slug)
+    replys = letter.replys.order_by("-created_on") 
+    
+    if request.method == "POST":
+        message_subject_a = request.POST['message-subject-display']
+        message_email = request.POST['message-email']
+   
+        message_body = request.POST['message']
+        send_mail(
+            message_subject_a,
+            message_body,
+            email, #users email
+            [message_email], #person that wrote the replys email
+        )
+        # messages.success(request, 'Email sent successfully')
+    return render(request, 'bottles/contact.html',  {'slug': slug, 'email': email, 'replys': replys, 'username':username})
+   
