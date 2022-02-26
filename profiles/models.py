@@ -9,21 +9,20 @@ class Profile(models.Model):
     A user Profile model for maintaining default
     information and history
     """
-
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     image = models.ImageField(default='default.jpg', upload_to='profile_pics')
+    
+def __str__(self):
+    return f'{self.user.username} Profile'
 
-    def __str__(self):
-        return f'{self.user.username} Profile'
+# @receiver(post_save, sender=User)
+# def create_or_update_user_profile(sender, instance, created, **kwargs):
+#     Profile.objects.create(user=instance)
 
-@receiver(post_save, sender=User)
-def create_or_update_user_profile(sender, instance, created, **kwargs):
-    UserProfile.objects.create(user=instance)
-
-    """
-    Create or update user profiles
-    """
-    if created:
-        #Exisiting users: just save profile
-        instance.userprofile.save()
+#     """
+#     Create or update user profiles
+#     """
+#     if created:
+#         #Exisiting users: just save profile
+#         instance.userprofile.save()
  
