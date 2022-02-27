@@ -1,11 +1,17 @@
-import os, django 
+import os, django, random
+
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'message_in_a_bottle.settings')
+
 django.setup()
 
-import random
 from faker import Faker
 from django.contrib.auth.models import User 
 from bottles.models import Letter, Reply
+from django.utils import timezone
+from django.utils.crypto import get_random_string
+
+
+
 
 
 letters = [{"bottle":"Foxgloves in hedges, surround the farms","answer":"A way is long and so are your arms."},
@@ -40,6 +46,20 @@ letters = [{"bottle":"Foxgloves in hedges, surround the farms","answer":"A way i
 {"bottle":"Daisies are pretty, daffies have style,","answer":"Purposes are illuminating, and so is your smile."}]
 
 
+
+# def create_letter(N):
+#     fake = Faker()
+#     for _ in range(N):
+#         id = random.randint(1, len(User.objects.all()))
+#         author = User.objects.get(id=id)
+#         body = fake.text(max_nb_chars=100)
+#         created = timezone.now()
+#         slug = get_random_string(12, '1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ')
+#         Letter.objects.create(body=body, slug=slug, author=author, created_on=created )
+
+# create_letter()
+
+
 # def create_user(N):
 #     fake = Faker()
 #     for _ in range(N):
@@ -50,10 +70,11 @@ letters = [{"bottle":"Foxgloves in hedges, surround the farms","answer":"A way i
 #         email = fake.email()
 #         password = fake.password()
 #         User.objects.create_user(username=username, email=email, password=password, first_name=f_name, last_name=l_name)
+        
 # create_user()
 
 
-# id, author, body, slug, Letter.create(author=(User.objects.get(id=id), body=.......))
+
 
 #def create_bottled_message(N=1):
 #    for _ in range(N):
