@@ -18,8 +18,11 @@ body {
     height: 100vh;
     position: relative;
     width: 100%;
+   
 
 }
+
+
   
   h1, h2, h3, h4, h5, h6 {
     color: #444444;
@@ -36,6 +39,7 @@ body {
     border-radius: 3px;
     margin-bottom: 20px;
   }
+
   
   .article-title {
     color: #444444;
@@ -73,9 +77,9 @@ body {
     vertical-align: middle;
   }
   
-  .account-img {
-    height: 125px;
-    width: 125px;
+   .profile-pic{
+    height: 200px;
+    width: 200px;
     margin-right: 20px;
     margin-bottom: 16px;
   }
@@ -93,17 +97,6 @@ body {
     margin-top: calc(-1 * var(--bs-gutter-y));
     margin-right: calc(-.5 * var(--bs-gutter-x));
     margin-left: calc(-.5 * var(--bs-gutter-x));
-}
-
-#body-image {
-    height: 85%;
-    width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../img/heart1.jpg");
-    overflow: hidden;
-    position: absolute;
-    margin: 0%;
-    padding-right: 0%;
-    padding-left: 0%;
 }
 
 
@@ -155,37 +148,3 @@ body {
 
 
 
-
-footer {
-    position: fixed;
-    left: 0px;
-    bottom: 0px;
-    height: 100px;
-    width: 100%;
-    padding: 0 30px;
-    display: flow-root;
-    align-items: center;
-    justify-content: space-between;
-    border-top: 2px solid #fff
-}
-
-
-.social-links {
-    margin-top: 20px;
-}
-
-.social-links li a i {
-    background-color: #42193d;
-    ;
-    height: 50px;
-    width: 50px;
-    color: #fff;
-    font-size: 30px;
-    padding: 10px;
-    border-radius: 20%;
-}
-
-.social-links li a i:hover {
-    background: #FFCCCC;
-    color: #c31aad;
-}
