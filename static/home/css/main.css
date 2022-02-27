@@ -235,6 +235,22 @@ textarea.input-box.input-lg{
 
 .modal-body {padding: 2px 16px;}
 
+/*-----------Login form----------*/
+
+.content-login-section{
+    background: #42193d;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow:  5px 5px 5px 0px #69086c, inset 4px 4px 15px 0px  rgb(0 0 0 / 0%);
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-top: 22px;
+    margin-bottom: 20px;
+    color: #c31aad;
+  }
+
+  
+
 
 /*----------Profile Sytle-----------*/
 .hr-class{
@@ -248,7 +264,7 @@ textarea.input-box.input-lg{
     margin-bottom: 16px;
   }
 
-  .content-section {
+  .content-profile-section{
     background: #42193d;
     padding: 10px 20px;
     border: 1px solid #dddddd;
