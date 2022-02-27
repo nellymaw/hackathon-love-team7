@@ -1,8 +1,10 @@
 
 .ocean{
     height: 100vh;
-    background:  url("../img/ocean_main.jpg") no-repeat center;
-    background-size: 100%;
+    width: 100vw;
+    background: url("../img/ocean_main.jpg") no-repeat center center;
+    background-size: cover;
+    position: fixed;
 }
 
 
