@@ -26,7 +26,7 @@
     width: 70px; height: 70px;
     position: absolute;
     animation: appear ease-in;
-    animation-duration: 8s;
+    animation-duration: 12s;
     opacity: 0;
     cursor: pointer;
     color: red;
@@ -35,30 +35,30 @@
 /* GROUP A  */
 
 .bottle-a:nth-child(1) {
-    right: 35%; top: 70%;
+    right: 35%; top: 55%;
     animation-delay: 2s;
 }
 
 
 .bottle-a:nth-child(3) {
-    right: 65%; top: 75%;
+    right: 65%; top: 60%;
     animation-delay: 4s;
 
 }
 
 .bottle-a:nth-child(5) {
-    right: 15%; top: 84%;
+    right: 15%; top: 69%;
     animation-delay: 10s;
 }
 
 .bottle-a:nth-child(7) {
-    right: 20%; top: 92%;
+    right: 20%; top: 77%;
     animation-delay: 15s;
 
 }
 
 .bottle-a:nth-child(9) {
-    right: 88%; top: 71%;
+    right: 88%; top: 56%;
     animation-delay: 18s;
 
 }
@@ -70,30 +70,30 @@
 
 
 .bottle-b:nth-child(1) {
-    right: 25%; top: 82%;
+    right: 25%; top: 67%;
     animation-delay: 23s;
 }
 
 
 .bottle-b:nth-child(3) {
-    right: 68%; top: 70%;
+    right: 68%; top: 55%;
     animation-delay: 28s;
 
 }
 
 .bottle-b:nth-child(5) {
-    right: 28%; top: 81%;
+    right: 28%; top: 66%;
     animation-delay: 32s;
 }
 
 .bottle-b:nth-child(7) {
-    right: 20%; top: 92%;
+    right: 20%; top: 77%;
     animation-delay: 38s;
 
 }
 
 .bottle-b:nth-child(9) {
-    right: 9%; top: 83%;
+    right: 9%; top: 68%;
     animation-delay: 42s;
 
 }
@@ -103,60 +103,60 @@
 /* GROUP C  */
 
 .bottle-c:nth-child(1) {
-    right: 36%; top: 79%;
+    right: 36%; top: 64%;
     animation-delay: 44s;
 }
 
 
 .bottle-c:nth-child(3) {
-    right: 65%; top: 76%;
+    right: 65%; top: 61%;
     animation-delay: 48s;
 
 }
 
 .bottle-c:nth-child(5) {
-    right: 52%; top: 84%;
+    right: 52%; top: 69%;
     animation-delay: 52s;
 }
 
 .bottle-c:nth-child(7) {
-    right: 20%; top: 92%;
+    right: 20%; top: 77%;
     animation-delay: 56s;
 
 }
 
 .bottle-c:nth-child(9) {
-    right: 88%; top: 81%;
+    right: 88%; top: 66%;
     animation-delay: 62s;
 }
 
 /* GROUP D */
 
 .bottle-d:nth-child(1) {
-    right: 36%; top: 79%;
+    right: 36%; top: 64%;
     animation-delay: 64s;
 }
 
 
 .bottle-d:nth-child(3) {
-    right: 65%; top: 76%;
+    right: 65%; top: 61%;
     animation-delay: 68s;
 
 }
 
 .bottle-d:nth-child(5) {
-    right: 52%; top: 84%;
+    right: 52%; top: 69%;
     animation-delay: 71s;
 }
 
 .bottle-d:nth-child(7) {
-    right: 20%; top: 92%;
+    right: 20%; top: 77%;
     animation-delay: 75s;
 
 }
 
 .bottle-d:nth-child(9) {
-    right: 88%; top: 81%;
+    right: 88%; top: 66%;
     animation-delay: 80s;
 }
 
