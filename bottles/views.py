@@ -1,12 +1,13 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib import messages
 from django.views import generic, View
 from django.contrib.auth.decorators import login_required
 from django.core.mail import send_mail
+from django.template.defaultfilters import slugify
 from .models import Letter
 from .forms import ReplyForm
 import random
-
+from .forms import LetterForm
 class LetterList(generic.ListView):
     """
     docstring
@@ -125,4 +126,30 @@ def ContactView(request, slug):
         )
         # messages.success(request, 'Email sent successfully')
     return render(request, 'bottles/contact.html',  {'slug': slug, 'email': email, 'replys': replys, 'username':username})
-   
+
+
+def AddLetter(request):
+    """
+    A view to add a letter, redirects to the home page when submitted
+    Args:
+        request (object): HTTP request object.
+        
+    Returns:
+        Render of letter form with context
+    """
+    if not request.user.is_authenticated:
+        messages.error(
+            request, 'Sorry, only logged in users can create a letter.')
+        return redirect(reverse('home'))
+    form = LetterForm()
+    if request.method == "POST":
+        form = LetterForm(request.POST, request.FILES)
+        if form.is_valid():
+            letter = form.save(commit=False)
+            letter.slug = slugify(request.POST["body"])
+            letter.author = request.user
+            letter.save()
+            return redirect(reverse("letter_list"))
+    context = {"form": form}
+    return render(request, "bottles/letterform.html", context)
+
