@@ -12,11 +12,9 @@
     display: none;
 }
 
-.letter-modal {
-   position: relative;
-   padding: 0; margin: 0;
-   left: 30%; top: 300px;
-   padding: 1em;
+.basic-wrapper {
+    background: url("../img/paper.png") center;
+    background-size: 120%;
 }
 
 .bottle {
@@ -82,7 +80,7 @@
 }
 
 .bottle-b:nth-child(5) {
-    right: 28%; top: 66%;
+    right: 70%; top: 66%;
     animation-delay: 32s;
 }
 
