@@ -253,9 +253,10 @@ box-shadow:  5px 5px 5px 0px #69086c, inset 4px 4px 15px 0px  rgb(0 0 0 / 0%);
 
 
 /*----------Profile Sytle-----------*/
-.hr-class{
+.hr-class, .info-class{
     color: #c31aad;
 }
+
 .profile-pic{
     height: 200px;
     width: 200px;

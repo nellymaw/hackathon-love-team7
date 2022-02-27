@@ -6,6 +6,7 @@ from django.core.exceptions import ObjectDoesNotExist
 
 @receiver(post_save, sender=User)
 def create_profile(sender, instance, created, **kwargs):
+    """dcfds"""
     try:
         instance.profile.save()
     except ObjectDoesNotExist:
