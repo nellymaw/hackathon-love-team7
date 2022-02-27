@@ -2,7 +2,7 @@
 .ocean{
     height: 100vh;
     width: 100vw;
-    background: url("../img/ocean_main.jpg") no-repeat bottom center;
+    background: url("../img/ocean_main.jpg") no-repeat bottom left;
     background-size: cover;
     position: fixed;
 }
@@ -236,4 +236,12 @@
     95% {opacity: 1;}
 
     100% {opacity: 0; }
+}
+
+/* Mediaqueries */
+
+@media screen and (max-width: 1000px) {
+    .bottle {
+        width: 50px; height: 50px;
+    }
 }
