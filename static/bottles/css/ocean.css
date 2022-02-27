@@ -20,7 +20,9 @@
 }
 
 .bottle {
-    background: url('../img/bottle.svg') no-repeat center;
+    background: url('../img/nice_bottle.png') no-repeat center;
+    background-size: cover;
+    filter: invert(1);
     width: 70px; height: 70px;
     position: absolute;
     animation: appear ease-in;
