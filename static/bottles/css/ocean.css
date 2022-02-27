@@ -15,6 +15,7 @@
 .basic-wrapper {
     background: url("../img/paper.png") center;
     background-size: 120%;
+    text-align: center;
 }
 
 .bottle {
