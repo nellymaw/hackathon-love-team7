@@ -60,8 +60,15 @@ nav {
     margin-right: 3rem;
 }
 
-.nav-item {
+.nav-link {
     text-transform: uppercase;
+    margin-left: 0.5rem;
+    font-weight: 600;
+    color: #FFCCCC !important;
+}
+
+.nav-link:hover {
+    color: #c31aad !important;
 }
 
 /* landing page */
