@@ -16,12 +16,12 @@
 
 {% block content %}
     <div class="container-fluid">
-        <div class="content-section">
+        <div class="content-profile-section">
         <div class="media">
-        <img class="rounded-circle account-img" src="{{ user.profile.image.url }}">
+        <img class="profile-pic" src="{{ user.profile.image.url }}">
         <div class="media-body">
-            <h2 class="account-heading">{{ user.username }}</h2>
-            <p class="text-secondary">{{ user.email }}</p>
+            <h2 class="account-heading"> Welcome back <span id="profile-username">{{ user.username }}</span></h2>
+            <p class="text-secondary">Email: {{ user.email }}</p>
         </div>
         </div>
         {% block page_header %}
@@ -37,9 +37,9 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <hr>
-                <h2 class="logo-font mb-4">My Profile</h2>
-                <hr>
+                <hr class="hr-class"> 
+                <h2 class="profile-title logo-font mb-4">My Profile</h2>
+                <hr class="hr-class">
             </div>
         </div>
         <div class="row">
