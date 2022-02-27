@@ -7,56 +7,31 @@ from .models import Letter
 from .forms import ReplyForm
 import random
 
-letters = [{"bottle":"Foxgloves in hedges, surround the farms","answer":"A way is long and so are your arms."},
-{"bottle":"Daisies are pretty, daffies have style,","answer":"The ticket is winning, and so is your smile."},
-{"bottle":"A lily is beautiful","answer":"Just like you."},
-{"bottle":"Roses are red, violets are blue,","answer":"The tale is weird, and so are you."},
-{"bottle":"In summertime, our love is kind, like roses floating in the breeze.","answer":"In wintertime, our love is warm — it goes from arm to toes."},
-{"bottle":"Roses are red, Violets are blue","answer":"shoes are cute, and so are you."},
-{"bottle":"Orchids are white, ghost ones are rare","answer":"A dress is black, and so is your hair."},
-{"bottle":"Magnolia grows, with buds like eggs","answer":"Your yellow is pale, and so are your legs."},
-{"bottle":"Sunflowers reach, up to the skies","answer":"The sky is pale, and so are your eyes."},
-{"bottle":"If skies are blue, our love is happy — two people dancing in the sun.","answer":"If thunder rolls our love is calm, a refuge from the falling rain."},
-{"bottle":"Roses are red, violets are blue","answer":"This website is weird, and so are you."},
-{"bottle":"Orchids are white, ghost ones are rare","answer":"My history is long, and so is your hair."},
-{"bottle":"Magnolia grows with buds like eggs","answer":"Your film is thin, and so are your legs."},
-{"bottle":"Sunflowers reach up to the skies","answer":"Treatment is kind, and so are your eyes."},
-{"bottle":"Foxgloves in hedges, surround the farms","answer":"My intake is fat, and so are your arms."},
-{"bottle":"Daisies are pretty, daffies have style","answer":"Your place is warm, and so is your smile."},
-{"bottle":"Roses are red, violets are blue","answer":"The student is bright, and so are you."},
-{"bottle":"Orchids are white, ghost ones are rare","answer":"Your mean is golden, and so is your hair."},
-{"bottle":"Magnolia grows, with buds like eggs","answer":"A film is thin, and so are your legs."},
-{"bottle":"Sunflowers reach, up to the skies","answer":"Pink is pale, and so are your eyes."},
-{"bottle":"Foxgloves in hedges, surround the farms","answer":"Your supply is short, and so are your arms."},
-{"bottle":"Daisies are pretty, daffies have style","answer":"The example is illuminating, and so is your smile."},
-{"bottle":"A seahorse is beautiful","answer":"And so are you!"},
-{"first_name":"Dory","last_name":"Goring","email":"dgoringo@163.com","gender":"Female","bottle":"Roses are red, violets are blue","answer":"A sun is bright, and so are you."},
-{"bottle":"Orchids are white, ghost ones are rare","answer":"Days are golden, and so is your hair."},
-{"bottle":"Magnolia grows, with buds like eggs","answer":"The air is thin, and so are your legs."},
-{"bottle":"Sunflowers reach, up to the skies,","answer":"The brown is pale, and so are your eyes."},
-{"bottle":"Foxgloves in hedges, surround the farms,","answer":"My story is short, and so are your arms."},
-{"bottle":"Daisies are pretty, daffies have style,","answer":"Purposes are illuminating, and so is your smile."}]
-
-
-def ocean(request):
-    """ docstring """
-    if request.method == 'GET':
-        random.shuffle(letters)
-        group_a = letters[:5]
-        group_b = letters[5:10]
-        group_c = letters[10:15]
-        context = {'group_a': group_a, 'group_b': group_b, 'group_c': group_c }
-        return render(request, 'bottles/ocean.html', context)
-    
-    
-
 class LetterList(generic.ListView):
     """
     docstring
     """
     model = Letter
-    queryset = Letter.objects.order_by("-created_on")
-    template_name = "home/landing.html"
+    # queryset = Letter.objects.order_by("-created_on")
+    template_name = "bottles/ocean.html"
+
+    def get_context_data(self, **kwargs):
+        context = super(LetterList, self).get_context_data(**kwargs)
+        letters_list = Letter.objects.exclude(author=self.request.user)
+        letters_obj = random.sample(list(letters_list), len(letters_list))
+        try:
+            letters_obj = random.sample(list(letters_list), 20)
+            context['group_a'] = letters_obj[:5]
+            context['group_b'] = letters_obj[5:10]
+            context['group_c'] = letters_obj[10:15]
+            context['group_d'] = letters_obj[15:20]
+        except ValueError as e:
+            letters_obj = random.sample(list(letters_list), len(letters_list))
+            context['group_a'] = letters_obj[:5]
+            context['group_b'] = letters_obj[5:10]
+            context['group_c'] = letters_obj[10:15]
+            context['group_d'] = letters_obj[15:20]
+        return context
 
 
 class LetterDetail(View):
@@ -76,7 +51,7 @@ class LetterDetail(View):
         replys = letter.replys.order_by("-created_on")  # oldest first
         return render(
             request,
-            "home/landing_detail.html",
+            "bottles/letter_detail.html",
             {
                 "letter": letter,
                 "replys": replys,
