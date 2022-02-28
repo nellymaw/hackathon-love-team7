@@ -362,14 +362,24 @@ textarea.input-box.input-lg{
 .inbox-letter {
     padding: 1em;
     border-radius: 25px;
-    background-color: #FFCCCC;
+    background-color: #fff;
     margin: .5em 0;
 }
 
 #inbox-username {
-    font-family: 'Lovers Quarrel', cursive;
-    font-size: 6rem;
     color: #42193d;
+}
+
+.inbox-btn {
+    background-color: #FFCCCC !important;
+    color: #42193d !important;
+    border-color: #42193d !important;
+}
+
+.inbox-btn:hover {
+    background-color: #42193d !important;
+    color: #FFCCCC !important;
+    border-color: #FFCCCC !important;
 }
 
     /* Bottle reply page */
