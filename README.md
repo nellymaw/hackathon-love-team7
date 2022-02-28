@@ -45,12 +45,10 @@ Sign up today!
 ## User Stories
 - As a user I would like to be able to access the about section of the page to understand it's purpose and how to interact with it.
 
-- As a user I would like to be able to login into the account I've previously created.
-
-- As a user I would like the website to be intuitive enough so that I don't feel like I'm lost.
-
 - As a user I would like to be able to create an account.
 
+- As a user I would like to be able to login into the account I've previously created.
+  
 - As a user I would like to be able to edit my Bio on my account.
 
 - As a user I would like to be able to change my account's password.
@@ -59,15 +57,13 @@ Sign up today!
 
 - As a user I would like to be able to choose which bottle i want to pick.
 
-- A anuser I would like to be able to respond or not to a bottle that I have picked up.
-
-- As a user I would like to be able to send a reply to a bottle so that the creator of the message can contact me, if he/she decides to.
+- As a user I would like to be able to respond or not to a bottle that I have picked up.
 
 - As a user I would like to be able to access my inbox so that i can read sent and received messages.
 
 - As a user I would like the messages in my inbox to be refreshed periodically.
 
-- As a user I would like to be able to read the bio and see the profile picture of an user that has replied to my bottled message so I can decide if I want to contact them or not.
+- As a user I would like to be able to read the bio and see the profile picture of a user that has replied to my bottled message so I can decide if I want to contact them or not.
 
 - As a user I would like to be able to contact other users who have replied to my bottles via a contact form.
 
@@ -152,6 +148,54 @@ Result for Mobile
 ![Lighthouse Validation](light-house-not-working-here)
 
 ## Test Cases
+- To access the about section of the page:
+  - Low resolution devices<br><br>
+    Click on the hamburger menu<br>
+    ![Hamburger-Low-Res](readmeContent/testCases/access-about-section/lowResolutionFirstStep.png)
+
+    A few options will appear, click on the about button<br>
+    ![About-Low-Res](readmeContent/testCases/access-about-section/lowResolutionSecondStep.png)
+
+    Once clicked it will open a modal window<br>
+    ![About-Modal-Low-Res](readmeContent/testCases/access-about-section/LowResolutionThirdStep.png)
+
+    To close it the user can either press the X button or click outside of the modal<br>
+    ![Close-Modal-Low-Res](readmeContent/testCases/access-about-section/lowResolutionFourthStep.png)
+
+
+  - High resolution devices:<br><br>
+    On the right corner of the nav bar you will find the About button<br>
+    ![About-High-Res](readmeContent/testCases/access-about-section/highResolutionFirstStep.png)
+
+    Once clicked it will open a modal window<br>
+    ![About-Modal-High-Res](readmeContent/testCases/access-about-section/highResolutionSecondStep.png)
+
+    To close it the user can either press the X button or click outside of the modal<br>
+    ![Close-Modal-High-Res](readmeContent/testCases/access-about-section/highResolutionThirdStep.png)
+
+- To create an account:
+
+- To login on a previously created account:
+
+- To edit one's Bio on their account:
+
+- To change an account's password:
+
+- To create bottled messages:
+
+- To pick a bottled message from someone:
+
+- To respond to a picked up bottle:
+
+- To not respond to a picked up bottle:
+
+- To access the user's inbox:
+
+- T check if the inbox was refreshed automatically:
+
+- To view the profile of an user that has replied to one of the messages written by the user:
+
+- To contact another user via the contact form provided.
 
 # Deployment
 
