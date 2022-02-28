@@ -88,7 +88,7 @@ class LetterDetail(LoginRequiredMixin, View):
             letter.has_unseen_reply = False 
             letter.save()
         return render(
-            request, "home/landing_detail.html",
+            request, "profiles/inbox_detail.html",
             {
                 "letter": letter,
                 "replys": replys,
