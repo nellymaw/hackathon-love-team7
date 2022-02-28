@@ -284,7 +284,7 @@ textarea.input-box.input-lg{
 
 /*----------Profile Sytle-----------*/
 .hr-class, .info-class{
-    color: #c31aad;
+    color: #42193d;
 }
 
 .profile-pic{
@@ -296,21 +296,23 @@ textarea.input-box.input-lg{
   }
 
   .content-profile-section{
-    background: #42193d;
     padding: 10px 20px;
-    border: 1px solid #dddddd;
-    border-radius: 3px;
     margin-top: 22px;
     margin-bottom: 20px;
   }
 
+  .dashboard-email {
+      text-transform: uppercase;
+      color: #42193d;
+  }
+
   
   .article-title {
-    color: #c31aad;
+    color: #42193d;
   }
   
   a.article-title:hover {
-    color: #428bca;
+    color: #FFCCCC;
     text-decoration: none;
   }
   
@@ -331,7 +333,7 @@ textarea.input-box.input-lg{
   }
   
   .article-metadata a:hover {
-    color: #c31aad;
+    color: #42193d;
     text-decoration: none;
   }
   
@@ -343,15 +345,15 @@ textarea.input-box.input-lg{
   
   .account-heading {
     font-size: 2.5rem;
-    color: #c31aad;
+    color: #42193d;
   }
 
   .profile-title{
-      color: #c31aad;
+      color: #42193d;
   }
 
   #profile-username{
-      color: #c31aad;
+      color: #42193d;
   }
 
 
@@ -360,14 +362,24 @@ textarea.input-box.input-lg{
 .inbox-letter {
     padding: 1em;
     border-radius: 25px;
-    background-color: #FFCCCC;
+    background-color: #fff;
     margin: .5em 0;
 }
 
 #inbox-username {
-    font-family: 'Lovers Quarrel', cursive;
-    font-size: 6rem;
     color: #42193d;
+}
+
+.inbox-btn {
+    background-color: #FFCCCC !important;
+    color: #42193d !important;
+    border-color: #42193d !important;
+}
+
+.inbox-btn:hover {
+    background-color: #42193d !important;
+    color: #FFCCCC !important;
+    border-color: #FFCCCC !important;
 }
 
     /* Bottle reply page */

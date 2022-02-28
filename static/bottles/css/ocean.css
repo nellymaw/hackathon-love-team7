@@ -85,6 +85,17 @@
     opacity: .8;
 }
 
+.letter-btn {
+    background-color: #FFCCCC;
+    color: #42193d;
+    font-weight: 400;
+}
+
+.letter-btn:hover {
+    background-color: #42193d;
+    color: #FFCCCC;
+}
+
 /* GROUP A  */
 
 .bottle-a:nth-child(1) {

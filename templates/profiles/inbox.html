@@ -5,10 +5,10 @@
 <div class="basic-wrapper">
     <h1 id="inbox-username">{{user.username}}'s inbox</h1>
     <div class="button-wrapper">
-        <div id="btn-all" class="btn btn-info">All</div>
-        <div id="btn-thrown" class="btn btn-info">Thrown</div>
-        <div id="btn-fished" class="btn btn-info">Fished</div>
-        <div id="btn-unreply" class="btn btn-info">Unreplied</div>
+        <div id="btn-all" class="btn btn-info inbox-btn">All</div>
+        <div id="btn-thrown" class="btn btn-info inbox-btn">Your bottles</div>
+        <div id="btn-fished" class="btn btn-info inbox-btn">Fished bottles</div>
+        <div id="btn-unreply" class="btn btn-info inbox-btn">Lonely bottles</div>
     </div>
 
     {% for letter in letter_with_unseen_reply %}
