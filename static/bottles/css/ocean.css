@@ -8,10 +8,8 @@
 }
 
 .hidden {
-
     display: none;
 }
-
 
 .letter-content {
     background: url("../img/paper.png") no-repeat center;
@@ -20,6 +18,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center; align-items: center;
+
 
     font-weight: 600;
     font-size: large; 
