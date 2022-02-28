@@ -272,6 +272,10 @@ textarea.input-box.input-lg{
     font-weight: 600 !important;
 }
 
+.login-btn:hover {
+    background-color: #FFCCCC !important;
+}
+
 .form-background {
     height: 65vh;
     width: auto;
