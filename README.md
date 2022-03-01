@@ -1,7 +1,5 @@
 # Overview
-This project is a conjunct effort of [Amir Rastkhadiv](https://github.com/Amir-Rastkhadiv), [Chris Carabine](https://github.com/ccarabine),[Cian O'Connor](https://github.com/AlexNexton), [Daniel Callaghan](https://github.com/xiaoniuniu89), [Monique Veldman](https://github.com/Seamse) and [Rodolfo Frainer](https://github.com/nellymaw).
-
-The project aims to connect people through half phrases at a time.
+[live Website](https://pipeline-love-team7.herokuapp.com/)
 
 ## **Contents** ##
 
